@@ -1,6 +1,6 @@
 import time
-import pandas as pd
-import numpy as np
+#import pandas as pd
+#import numpy as np
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -17,12 +17,32 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-
+    v_choice = ['chicago', 'new york city', 'washington']
+    city = 'null'
+    while True:
+        city = input(f'\nPlease specify the name of the city? Enter one of {v_choice}.\n')
+        if city in v_choice:
+            break
 
     # get user input for month (all, january, february, ... , june)
-
+    v_choice = ['all', 'january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
+    month = 'null'
+    while True:
+        month = input(f'\nPlease specify the month?\n')
+        if month in v_choice:
+            break
+        else:
+            print(f"Please specify a valid month\n {v_choice}\n")
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
+    v_choice = ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+    day = 'null'
+    while True:
+        day = input(f'\nPlease specify the day?\n')
+        if day in v_choice:
+            break
+        else:
+            print(f"Please specify a valid day\n {v_choice}\n")
 
 
     print('-'*40)
@@ -40,7 +60,6 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-
 
     return df
 
