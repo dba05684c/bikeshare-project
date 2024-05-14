@@ -6,10 +6,11 @@ This project wants to provide the users with bike sharing information for differ
 
 ## Cities included in the project.
 ### Initial version:
-New York
-Washington
-Chicago
+New York  
+Washington  
+Chicago  
 
+## Additional information
 ### Date created
 Tuesday, the 14th of May 2024.
 
@@ -20,12 +21,12 @@ Bikeshare 2.
 The program will explore US bikeshare information for the end-user.
 
 ### Files used
-The python script: **bikeshare_2.py**
-Data files _(not included in the git repository)_
-    chicago.csv
-    new_york_city.csv
-    washington.csv
+The python script: **bikeshare_2.py**  
+Data files _(not included in the git repository)_  
+    chicago.csv  
+    new_york_city.csv  
+    washington.csv  
 
 ### Credits
-This project was inspired by the wonderful "Git/Introduction to Version Control" course.
+This project was inspired by the wonderful "Git/Introduction to Version Control" course.  
 The initial GitHub repository was forked from Udacity GitHub repository: **https://github.com/udacity/pdsnd_github**
